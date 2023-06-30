@@ -11,6 +11,23 @@
   </head>
 
   <body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <header class="homeHeader">
+      <%= link_to root_path, class: "navbar-item" do %>
+        <h1>tm_travel</h1>
+      <% end %>
+      <% if user_signed_in? %>
+        <p><%= link_to "アカウント", :users %></p>
+        <p><%= link_to "施設の新規登録", new_room_path %></p>
+        <p><%= link_to "登録済み一覧", :rooms %></p>
+        <p class="sign_out"><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></p> 
+      <% else %>
+        <%= link_to "ログイン", new_user_session_path, class: "sign" %>
+        <%= link_to "新規登録", new_user_registration_path, class: "sign" %>
+      <% end %>
+    </header>
     <%= yield %>
   </body>
 </html>

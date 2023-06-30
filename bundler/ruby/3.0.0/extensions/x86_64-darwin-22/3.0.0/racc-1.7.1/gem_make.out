@@ -1,0 +1,17 @@
+current directory: /Users/takahashimasashi/Desktop/tm_travel/bundler/ruby/3.0.0/gems/racc-1.7.1/ext/racc/cparse
+/Users/takahashimasashi/.rbenv/versions/3.0.6/bin/ruby -I /Users/takahashimasashi/.rbenv/versions/3.0.6/lib/ruby/3.0.0 -r ./siteconf20230630-78030-msd7en.rb extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /Users/takahashimasashi/Desktop/tm_travel/bundler/ruby/3.0.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\= clean
+
+current directory: /Users/takahashimasashi/Desktop/tm_travel/bundler/ruby/3.0.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\=
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/takahashimasashi/Desktop/tm_travel/bundler/ruby/3.0.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20230630-78030-9qnlal/racc

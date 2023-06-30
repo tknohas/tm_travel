@@ -1,0 +1,22 @@
+<%= @room.title %>
+
+<%= @room.body %>
+
+<%= @room.stay_price %>
+
+<%= @room.adress %>
+
+<%= attachment_image_tag @room, :room_image %>
+
+<%= form_with model: @reservation do |f| %>
+	<%= f.label :check_in_date, "チェックイン" %>
+	<%= f.date_field :check_in_date %>
+
+	<%= f.label :check_out_date, "チェックアウト" %>
+	<%= f.date_field :check_out_date %>
+
+    <%= f.label :people_number, "人数" %>
+	<%= f.text_field :people_number %>
+
+	<%= f.submit "投稿を完了する" %>
+<% end %>
